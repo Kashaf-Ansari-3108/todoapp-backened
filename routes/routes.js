@@ -6,11 +6,11 @@ router.get("/sample", (req, res) => {
     res.send("API HITT....!");
 });
 
-router.post("/post",todoControllers.post);
-router.get("/get",todoControllers.get);
-router.delete("/delete/:id",todoControllers.delete);
-router.put("/update",todoControllers.update);
-router.delete("/deleteAll",todoControllers.deleteAll);
+router.post("/post",post);
+router.get("/get",get);
+router.delete("/delete/:id",deleteOne);
+router.put("/update",update);
+router.delete("/deleteAll",deleteAll);
 
 
 
