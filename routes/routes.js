@@ -13,6 +13,4 @@ router.put("/update",update);
 router.delete("/deleteAll",deleteAll);
 
 
-
-
 module.exports = router;
