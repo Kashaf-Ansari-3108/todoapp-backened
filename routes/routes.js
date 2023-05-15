@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const todoModel = require('../Models/todoSchema');
-const todoControllers = require('../controllers/todoControllers');
+const {post,get,deleteOne,update,deleteAll} = require('../controllers/todoControllers');
 
 router.get("/sample", (req, res) => {
     res.send("API HITT....!");
