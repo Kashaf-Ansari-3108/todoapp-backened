@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 const todoSchema = mongoose.Schema({
     todo:{
         type:String,
@@ -10,4 +10,4 @@ const todoSchema = mongoose.Schema({
       }
 });
 const todoModel = mongoose.model('todo',todoSchema);
-module.exports = todoModel;
+export default todoModel
